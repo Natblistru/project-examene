@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-filtre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-catalog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog-paginator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscriptions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
