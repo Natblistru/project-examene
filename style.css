@@ -56,6 +56,27 @@
     overflow: hidden;
   }
 
+  .video-lesson-item___included {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 5px 0 5px 0;
+  }
+
+  .video-lesson-item___included > a:hover {
+    color: #f3520c;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .fa-bookmark::before {
+    background-color: white;
+    border: 2px white solid;
+    outline: none;
+    cursor: pointer;
+  }
+
   .accordion {
     background-color: #eee;
     color: #444;
@@ -68,6 +89,18 @@
     font-size: 15px;
     transition: 0.4s;
   }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
   
   .active, .accordion:hover {
     background-color: #ccc; 
@@ -75,9 +108,10 @@
   
   .panel {
     padding: 0 18px;
-    display: none;
     background-color: white;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
 
   .hide {
