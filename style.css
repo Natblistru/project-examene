@@ -47,6 +47,72 @@
   overflow-y: scroll;
 }
 
+.video-lesson-container .video-lesson-social {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5px 15px 20px;
+}
+
+.social-margin {
+  margin-top: 15px;
+}
+ 
+a.social-link {
+  padding-right: 10px;
+ }
+ 
+
+.video-lesson-container .video-lesson-social .social-items-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.video-lesson-container .video-breakpoints-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.video-lesson-container .h3-orange {
+  color: #f3520c;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.video-lesson-container .video-breakpoints-container .video-breakpoints-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  color: #232323;
+}
+
+.video-lesson-container .video-breakpoints-container .video-breakpoints-wrapper .video-breakpoints-item {
+  display: flex;
+  width: 33%;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.video-lesson-container .video-breakpoints-container .video-breakpoints-wrapper .video-breakpoints-item::before {
+  content: '';
+  background: #52c3b0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
 .video-lesson-content, .video-lesson-item-head, .video-lesson-item-head-a {
     display: flex;
   }
@@ -72,6 +138,11 @@
   .video-lesson-item___included > a:hover {
     color: #f3520c;
     text-decoration: underline;
+    cursor: pointer;
+  }
+
+   .video-breakpoint-time:hover {
+    color: #53a395;
     cursor: pointer;
   }
 
@@ -133,12 +204,7 @@ font-size: 20px;
 font-family: 'FontAwesome';
 }
 
-.video-lesson-container .video-breakpoints-container .video-breakpoints-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    color: #232323;
-  }
+
 
   .main-footer {
     background: #303d47;

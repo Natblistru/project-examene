@@ -1,7 +1,4 @@
-
-// let acc = document.getElementsByClassName("video-lesson-item-head");
- let itemDescr = document.querySelectorAll(".panel")
-// let btn1 = document.querySelector('.video-lesson-item-head[data-num-video="1"] ');
+let itemDescr = document.querySelectorAll(".panel")
 let videoSourse = document.querySelectorAll("#scrollToVideo iframe")
 var acc = document.getElementsByClassName("accordion");
 var i;
