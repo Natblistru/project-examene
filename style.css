@@ -42,6 +42,11 @@
     margin-bottom: 0;
 }
 
+.video-lessons-list-container {
+  max-height: 360px;
+  overflow-y: scroll;
+}
+
 .video-lesson-content, .video-lesson-item-head, .video-lesson-item-head-a {
     display: flex;
   }
