@@ -1,59 +1,108 @@
-let itemDescr = document.querySelectorAll(".panel")
-let videoSourse = document.querySelectorAll("#scrollToVideo iframe")
-const favoriteButtons = document.querySelectorAll('.add-bookmark-btn ');
-const acc = document.getElementsByClassName("accordion");
-let videoBreakpoints = document.querySelectorAll(".video-breakpoints-item");
-let i;
-let videoIndex = 0;
-
-initialization();
-function initialization() {
-    videoSourse.forEach((card) => {
-        card.classList.add("hide");
-      });
-    
-     videoSourse[0].classList.remove("hide");
-}
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    const elements = document.querySelectorAll('.active');
-    elements.forEach(element => {
-      element.classList.remove('active');
+	
+ let itemDescr = document.querySelectorAll(".panel")
+ let videoSourse = document.querySelectorAll("#scrollToVideo iframe")
+ let favoriteButtons = document.querySelectorAll('.add-bookmark-btn ');
+ let acc = document.getElementsByClassName("accordion");
+ let videoBreakpoints = document.querySelectorAll(".video-breakpoints-item");
+ let i;
+ let videoIndex = 0;  
+   
+ function initialization() {
+  videoSourse.forEach((card) => {
+      card.classList.add("hide");
     });
-    const panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-        itemDescr.forEach((card) => {
-        card.style.maxHeight = null;
-        });
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        this.classList.add("active");
-        let videoSourse = document.querySelectorAll("#scrollToVideo iframe")
-        videoSourse.forEach((card) => {
-          card.classList.add("hide");
-        });
-        videoIndex = this.dataset.num-1;
-        videoSourse[videoIndex].classList.remove("hide");
-        
-    }
-  });
+  videoSourse = document.querySelectorAll("#scrollToVideo iframe")
+  videoSourse[0].classList.remove("hide");
 }
+   
+   fetch('lectiiHystory.json')
+      .then(response => response.json())
+      .then(data => {
+
+        let template = document.querySelector("#video-listTemplate").innerHTML;
+        let scrollToVideo = document.querySelector("#scrollToVideo .video-list");
+
+        data.forEach(lectie => {
+          let renderedHtml = Mustache.render(template, lectie);
+          scrollToVideo.innerHTML += renderedHtml;
+        });
+
+        initialization();
+
+      })
+  .catch(error => console.error(error));
+
+  fetch('lectiiHystory.json')
+      .then(response => response.json())
+      .then(data => {
+
+        let template = document.querySelector("#video-lessons-list-containerTemplate").innerHTML;
+        let lessonsList = document.querySelector("#scrollToVideo .video-lessons-list-container");
+
+        data.forEach(lectie => {
+          let renderedHtml = Mustache.render(template, lectie);
+          lessonsList.innerHTML += renderedHtml;
+        });
+
+        acc = document.getElementsByClassName("accordion");
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            const elements = document.querySelectorAll('.active');
+            elements.forEach(element => {
+              element.classList.remove('active');
+            });
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+                itemDescr = document.querySelectorAll(".panel")
+                itemDescr.forEach((card) => {
+                card.style.maxHeight = null;
+                });
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                this.classList.add("active");
+                let videoSourse = document.querySelectorAll("#scrollToVideo iframe")
+                videoSourse.forEach((card) => {
+                  card.classList.add("hide");
+                });
+                videoIndex = this.dataset.num-1;
+                videoSourse[videoIndex].classList.remove("hide");
+                
+            }
+          });
+        }
+        
+        
+        favoriteButtons = document.querySelectorAll('.add-bookmark-btn ');
+        favoriteButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            button.classList.toggle("active");
+            if (button.classList.contains('active')) {
+              button.innerHTML = `<i class="fa-solid fa-bookmark"></i>`;
+            } else {
+              button.innerHTML = `<i class="fa-regular fa-bookmark"></i>`;;
+            }
+        
+          });
+        });
+
+
+      })
+  .catch(error => console.error(error));
 
 
 
-favoriteButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.toggle("active");
-    if (button.classList.contains('active')) {
-      button.innerHTML = `<i class="fa-solid fa-bookmark"></i>`;
-    } else {
-      button.innerHTML = `<i class="fa-regular fa-bookmark"></i>`;;
-    }
 
-  });
-});
+
+// initialization();
+// function initialization() {
+//     videoSourse.forEach((card) => {
+//         card.classList.add("hide");
+//       });
+//     videoSourse[0].classList.remove("hide");
+// }
+
+
 
 videoBreakpoints.forEach(button => {
   button.addEventListener('click', event => {
@@ -70,9 +119,4 @@ videoBreakpoints.forEach(button => {
  
   })
 })
-
-
-
-
-
-
+	
