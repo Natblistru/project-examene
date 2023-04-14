@@ -48,162 +48,29 @@
             </div>
 
             <div id="scrollToVideo" class="video-lesson-content">
-            <div class="video-list flex-item"></div>
-            <template id="video-listTemplate">
-
-                            <iframe class="hide" width="100%" height="360" src={{video}} title={{title}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-
-            </template>
+                <div class="video-list flex-item"></div>
+                <template id="video-listTemplate">
+                    <iframe class="hide" width="100%" height="360" src={{video}} title={{title}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                </template>
 
 
-            <div class="video-lessons-list-container flex-item"></div>
-            <template id="video-lessons-list-containerTemplate">
-                <button class="accordion" data-num={{id}}>{{id}}. {{title}} </button>
-                <div class="panel">
-                    <div class="video-lesson-item___included">
-                        <a class="get-materials" data-link="" href={{adressTeorie}} download="Lectia_{{id}}">Materialele lectiei</a>
-                        <a class="get-materials" data-link="" href={{adressTA}} download="LectiaTA_{{id}}">Tema pentru acasa</a>
-                        <a class="get-materials" data-link="" href="indexTest.html">Testare</a>
-                        <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                            <i class="fa-regular fa-bookmark"></i>
+                <div class="video-lessons-list-container flex-item"></div>
+                <template id="video-lessons-list-containerTemplate">
+                    <button class="accordion" data-num={{id}}>{{id}}. {{title}} </button>
+                    <div class="panel">
+                        <div class="video-lesson-item___included">
+                            <a class="get-materials" data-link="" href={{adressTeorie}} download="Lectia_{{id}}">Materialele lectiei</a>
+                            <a class="get-materials" data-link="" href={{adressTA}} download="LectiaTA_{{id}}">Tema pentru acasa</a>
+                            <a class="get-materials" data-link="" href="../indexTest.html">Testare</a>
+                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
                         </div>
+                    <p>{{continut}}</p>
                     </div>
-                <p>{{continut}}</p>
-                </div>
-            </template>
-        </div>
+                </template>
+            </div>
 
-
-
-
-            
-
-<!--             <div id="scrollToVideo" class="video-lesson-content">
-
-                <div class="video-list flex-item">
-                    <iframe class="hide" width="100%" height="360" src="https://www.youtube.com/embed/yV9BAp0JzNA?start=6" title="Conferinţa de Pace de la Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe class="hide" width="100%" height="360" src="https://www.youtube.com/embed/qV2PSgIK-c4" title="România în Primul Război Mondial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe class="hide" width="100%" height="360" src="https://www.youtube.com/embed/q8Gqn4UY6pI" title="Mișcarea națională a românilor din Basarabia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe class="hide" width="100%" height="360" src="https://www.youtube.com/embed/OtBKszdRODQ" title="Formarea Statului Național Unitar Român" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-
-                <div class="video-lessons-list-container flex-item">
-                    <button class="accordion" data-num="1">1. Conferinţa de Pace de la Paris </button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="" href="pdfLectie/pdfLectie.zip" download="Lectia1">Materialele lectiei</a>
-                            <a class="get-materials" data-link="" href="pdfTA/pdfTA.zip" download="LectiaTA">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="" href="indexTest.html">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.</p>
-                    </div>
-                    
-                    <button class="accordion" data-num="2">2. România în Primul Război Mondial</button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată.</p>
-                    </div>
-                    
-                    <button class="accordion" data-num="3">3. Mișcarea națională a românilor din Basarabia (1917-1918)</button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>Mișcarea națională a românilor din Basarabia a avut loc între anii 1917-1918 și a avut ca scop unirea teritoriului cu România. Această mișcare a dus la declanșarea unor conflicte în regiune, dar a fost una dintre cauzele care au dus la unirea Basarabiei cu România în anul 1918.</p>
-                    </div>
-                    <button class="accordion" data-num="4">4. Formarea Statului Național Unitar Român. Marea Unire din 1918 </button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.</p>
-                    </div>
-                    
-                    <button class="accordion" data-num="5">5. România în Primul Război Mondial</button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată.</p>
-                    </div>
-                    
-                    <button class="accordion" data-num="6">6. Mișcarea națională a românilor din Basarabia (1917-1918)</button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>Mișcarea națională a românilor din Basarabia a avut loc între anii 1917-1918 și a avut ca scop unirea teritoriului cu România. Această mișcare a dus la declanșarea unor conflicte în regiune, dar a fost una dintre cauzele care au dus la unirea Basarabiei cu România în anul 1918.</p>
-                    </div>    
-                    <button class="accordion" data-num="7">7. Conferinţa de Pace de la Paris </button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.</p>
-                    </div>
-                    
-                    <button class="accordion" data-num="8">8. România în Primul Război Mondial</button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată.</p>
-                    </div>
-                    
-                    <button class="accordion" data-num="9">9. Mișcarea națională a românilor din Basarabia (1917-1918)</button>
-                    <div class="panel">
-                        <div class="video-lesson-item___included">
-                            <a class="get-materials" data-link="">Materialele lectiei</a>
-                            <a class="get-materials" data-link="">Tema pentru acasa</a>
-                            <a class="get-materials" data-link="">Testare</a>
-                            <div title="Add to favorite" class="add-bookmark-btn " data-lesson-id="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
-                        </div>
-                      <p>Mișcarea națională a românilor din Basarabia a avut loc între anii 1917-1918 și a avut ca scop unirea teritoriului cu România. Această mișcare a dus la declanșarea unor conflicte în regiune, dar a fost una dintre cauzele care au dus la unirea Basarabiei cu România în anul 1918.</p>
-                    </div>         
-                </div>
-            </div> -->
             <div class="social-margin">
                 <div class="video-lesson-social ">
                     <div class="social-items-container">

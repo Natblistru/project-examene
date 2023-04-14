@@ -71,8 +71,7 @@
             }
           });
         }
-        
-        
+         
         favoriteButtons = document.querySelectorAll('.add-bookmark-btn ');
         favoriteButtons.forEach(button => {
           button.addEventListener('click', () => {
@@ -89,20 +88,6 @@
 
       })
   .catch(error => console.error(error));
-
-
-
-
-
-// initialization();
-// function initialization() {
-//     videoSourse.forEach((card) => {
-//         card.classList.add("hide");
-//       });
-//     videoSourse[0].classList.remove("hide");
-// }
-
-
 
 videoBreakpoints.forEach(button => {
   button.addEventListener('click', event => {
