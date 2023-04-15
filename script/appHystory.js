@@ -14,11 +14,13 @@
   videoSourse = document.querySelectorAll("#scrollToVideo iframe")
   videoSourse[0].classList.remove("hide");
 }
-   
-   fetch('lectiiHystory.json')
-      .then(response => response.json())
-      .then(data => {
-
+  
+async function app(){
+  try { 
+    const response = await fetch(`lectiiHystory.json`);
+     if (!response.ok) { 
+        throw new Error(`HTTP error! status: ${response.status}`); } 
+    const data = await response.json();
         let template = document.querySelector("#video-listTemplate").innerHTML;
         let scrollToVideo = document.querySelector("#scrollToVideo .video-list");
 
@@ -29,12 +31,17 @@
 
         initialization();
 
-      })
-  .catch(error => console.error(error));
+      } 
+      catch (error) { 
+         console.error('Error:', error); 
+     }
 
-  fetch('lectiiHystory.json')
-      .then(response => response.json())
-      .then(data => {
+    try { 
+      const response = await fetch(`lectiiHystory.json`);
+       if (!response.ok) { 
+          throw new Error(`HTTP error! status: ${response.status}`); } 
+      const data = await response.json();
+
 
         let template = document.querySelector("#video-lessons-list-containerTemplate").innerHTML;
         let lessonsList = document.querySelector("#scrollToVideo .video-lessons-list-container");
@@ -86,8 +93,12 @@
         });
 
 
-      })
-  .catch(error => console.error(error));
+      } 
+      catch (error) { 
+         console.error('Error:', error); 
+     }
+}
+app();
 
 videoBreakpoints.forEach(button => {
   button.addEventListener('click', event => {
