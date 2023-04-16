@@ -31,20 +31,8 @@ async function app(){
 
         initialization();
 
-      } 
-      catch (error) { 
-         console.error('Error:', error); 
-     }
-
-    try { 
-      const response = await fetch(`lectiiHystory.json`);
-       if (!response.ok) { 
-          throw new Error(`HTTP error! status: ${response.status}`); } 
-      const data = await response.json();
-
-
-        let template = document.querySelector("#video-lessons-list-containerTemplate").innerHTML;
-        let lessonsList = document.querySelector("#scrollToVideo .video-lessons-list-container");
+        template = document.querySelector("#video-lessons-list-containerTemplate").innerHTML;
+        lessonsList = document.querySelector("#scrollToVideo .video-lessons-list-container");
 
         data.forEach(lectie => {
           let renderedHtml = Mustache.render(template, lectie);
@@ -58,6 +46,12 @@ async function app(){
             elements.forEach(element => {
               element.classList.remove('active');
             });
+
+            lessonBreakpoints = document.querySelectorAll(".video-breakpoints-wrapper");
+            lessonBreakpoints.forEach((card) => {
+              card.classList.add("hideImportant");
+            });
+
             const panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
               panel.style.maxHeight = null;
@@ -74,11 +68,12 @@ async function app(){
                 });
                 videoIndex = this.dataset.num-1;
                 videoSourse[videoIndex].classList.remove("hide");
-                
+
+                lessonBreakpoints[videoIndex].classList.remove("hideImportant");                            
             }
           });
         }
-         
+
         favoriteButtons = document.querySelectorAll('.add-bookmark-btn ');
         favoriteButtons.forEach(button => {
           button.addEventListener('click', () => {
@@ -92,27 +87,45 @@ async function app(){
           });
         });
 
+        template = document.querySelector("#video-breakpoints-wrapperTemplate").innerHTML;
+        breakpointsList = document.querySelector(".video-breakpoints-wrapper-all");
 
+        data.forEach(breakpoint => {
+          let renderedHtml = Mustache.render(template, breakpoint);
+          breakpointsList.innerHTML += renderedHtml;
+        });
+
+        lessonBreakpoints = document.querySelectorAll(".video-breakpoints-wrapper");
+        lessonBreakpoints.forEach((card) => {
+          card.classList.add("hideImportant");
+        });
+        lessonBreakpoints[videoIndex].classList.remove("hideImportant");
+
+        videoBreakpoints = document.querySelectorAll(".video-breakpoints-item");
+        videoBreakpoints.forEach(button => {
+          button.addEventListener('click', event => {
+            /*autoplay-ca sa nu fie poster, enablejsapi - ca sa putem pune pauza prin js*/
+            let secondsTarget = event.target.closest('.video-breakpoints-item').dataset.seconds;
+            videoSourse[videoIndex].outerHTML = `<iframe class="" width="100%" height="360" src=${data[videoIndex].video}?start=${secondsTarget}&autoplay=1&amp;enablejsapi=1 title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+            
+            /*adaugam pauza dupa salt */
+            videoSourse = document.querySelectorAll("#scrollToVideo iframe")
+            videoSourse[videoIndex].addEventListener('load', () => {
+              const playerWindow = videoSourse[videoIndex].contentWindow;
+              setTimeout(function() {
+                playerWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+              }, 500);
+            });
+         
+          })
+        })       
       } 
       catch (error) { 
          console.error('Error:', error); 
      }
+
 }
 app();
 
-videoBreakpoints.forEach(button => {
-  button.addEventListener('click', event => {
-   // videoSourse[videoIndex].outerHTML = '<iframe class="" width="100%" height="360" src="https://www.youtube.com/embed/yV9BAp0JzNA?start=48&autoplay=1&amp;enablejsapi=1" title="Conferinţa de Pace de la Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe>';
-    videoSourse[videoIndex].outerHTML = '<iframe class="" width="100%" height="360" src="https://www.youtube.com/embed/yV9BAp0JzNA?start=149&autoplay=1&amp;enablejsapi=1" title="Conferinţa de Pace de la Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe>';
-  
-    videoSourse = document.querySelectorAll("#scrollToVideo iframe")
-    videoSourse[videoIndex].addEventListener('load', () => {
-      const playerWindow = videoSourse[videoIndex].contentWindow;
-      setTimeout(function() {
-        playerWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-      }, 500);
-    });
- 
-  })
-})
+
 	

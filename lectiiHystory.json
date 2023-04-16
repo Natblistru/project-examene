@@ -5,7 +5,21 @@
 		"video": "https://www.youtube.com/embed/yV9BAp0JzNA",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
-		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan."
+		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.",
+		"breakpoints": [
+			{"time":"0:00:48","seconds":"48","name":"Consecințele I Razboi mondial"},
+			{"time":"0:02:29","seconds":"149","name":"Tratatul de pace de la Paris"},
+			{"time":"0:04:08","seconds":"248","name":"Semnarea tratatelor de pace"},
+			{"time":"0:05:33","seconds":"333","name":"Pedepsirea Germnaniei"},
+			{"time":"0:06:54","seconds":"414","name":"Cele 14 puncte ale lui W.Wilson"},
+			{"time":"0:08:24","seconds":"504","name":"Liga Națiunilor - harta"},
+			{"time":"0:09:02","seconds":"542","name":"Caricatură Ligii Națiunilor"},
+			{"time":"0:10:09","seconds":"609","name":"Sistemul Versailles-Washington 1922"},
+			{"time":"0:12:04","seconds":"724","name":"Pactul Briand-Kellog 1928"},
+			{"time":"0:13:26","seconds":"806","name":"Cârdășia de la Munchen 1938"},
+			{"time":"0:15:18","seconds":"918","name":"Pactul Molotov-Ribbentrop 1939"},
+			{"time":"0:16:41","seconds":"1001","name":"Concluzii"}
+		]
 	},
 	{
 		"id": "2",
@@ -13,7 +27,20 @@
 		"video": "https://www.youtube.com/embed/qV2PSgIK-c4",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
-		"continut": "În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată."
+		"continut": "În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată.",
+		"breakpoints": [
+			{"time":"0:17:40","seconds":"1060","name":"Repere"},
+			{"time":"0:17:54","seconds":"1074","name":"Keywords"},
+			{"time":"0:19:11","seconds":"1151","name":"1914-1916"},
+			{"time":"0:20:31","seconds":"1231","name":"Dilema Ramâniei"},
+			{"time":"0:22:04","seconds":"1324","name":"Aderarea României la Tripla Alianță"},
+			{"time":"0:23:42","seconds":"1422","name":"Politica de neutralitate"},
+			{"time":"0:24:21","seconds":"1461","name":"Aderarea României la Antanta (1916)"},
+			{"time":"0:24:53","seconds":"1493","name":"Victoria de la Turtucaia (1916)"},
+			{"time":"0:25:29","seconds":"1529","name":"Lupte la Mărăști, Mărășești, Oituz (1917)"},
+			{"time":"0:26:52","seconds":"1612","name":"Pacea de la București 1918"},
+			{"time":"0:28:36","seconds":"1716","name":"Actul Unirii"}
+		]
 	},
 	{
 		"id": "3",
@@ -21,7 +48,25 @@
 		"video": "https://www.youtube.com/embed/q8Gqn4UY6pI",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
-		"continut": "Mișcarea națională a românilor din Basarabia a avut loc între anii 1917-1918 și a avut ca scop unirea teritoriului cu România. Această mișcare a dus la declanșarea unor conflicte în regiune, dar a fost una dintre cauzele care au dus la unirea Basarabiei cu România în anul 1918."
+		"continut": "Mișcarea națională a românilor din Basarabia a avut loc între anii 1917-1918 și a avut ca scop unirea teritoriului cu România. Această mișcare a dus la declanșarea unor conflicte în regiune, dar a fost una dintre cauzele care au dus la unirea Basarabiei cu România în anul 1918.",
+		"breakpoints": [
+			{"time":"0:05:58","seconds":"358","name":"Repere"},
+			{"time":"0:06:28","seconds":"388","name":"Notiuni"},
+			{"time":"0:07:12","seconds":"432","name":"Amplificarea mișcării de eliberare națională"},
+			{"time":"0:08:21","seconds":"501","name":"Constituirea Partidului Național Moldovenesc"},
+			{"time":"0:09:30","seconds":"570","name":"Programul Partidului Național Moldovenesc"},
+			{"time":"0:10:01","seconds":"601","name":"Antrenarea militarilor moldoveni"},
+			{"time":"0:11:14","seconds":"674","name":"Formarea comitetelor ostășești"},
+			{"time":"0:12:02","seconds":"722","name":"Pretențiile teritoriale ale Ucrainei"},
+			{"time":"0:12:38","seconds":"758","name":"Numirea comisarilor gubernial și județeni"},
+			{"time":"0:13:20","seconds":"800","name":"Ziarul Soldatul Moldovan"},
+			{"time":"0:13:48","seconds":"828","name":"Anarhie in Basarabia"},
+			{"time":"0:15:17","seconds":"917","name":"Congresul militarilor Moldoveni"},
+			{"time":"0:16:51","seconds":"1011","name":"Convocarea Sfatului Țării"},
+			{"time":"0:17:48","seconds":"1068","name":"Proclamarea R.D.M."},
+			{"time":"0:19:03","seconds":"1143","name":"Haos"},
+			{"time":"0:19:20","seconds":"1160","name":"Formarea Guvernului R.D.M."}
+		]
 	},
 	{
 		"id": "4",
@@ -29,6 +74,17 @@
 		"video": "https://www.youtube.com/embed/OtBKszdRODQ",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
-		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan."
+		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.",
+		"breakpoints": [
+			{"time":"0:01:05","seconds":"65","name":"Evocare"},
+			{"time":"0:01:23","seconds":"83","name":"Obiective operaționale"},
+			{"time":"0:01:44","seconds":"104","name":"Repere"},
+			{"time":"0:02:02","seconds":"122","name":"Contextul Unirii Românilor"},
+			{"time":"0:03:11","seconds":"191","name":"Unirea Basarabiei cu România"},
+			{"time":"0:04:45","seconds":"285","name":"Unirea Bucovinei cu România"},
+			{"time":"0:05:37","seconds":"337","name":"Unirea Transilvaniei cu România"},
+			{"time":"0:07:01","seconds":"421","name":"Importanța Actului Unirii din 1918"},
+			{"time":"0:08:26","seconds":"506","name":"Recunoașterea Unirii Basarabiei cu România"}
+		]
 	}
 ]

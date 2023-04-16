@@ -88,139 +88,27 @@
             </div>
             <div class="video-breakpoints-container">
                 <div class="h3-orange">Principalele subiecte abordate:</div>
-                <div class="video-breakpoints-wrapper">
-                            <div class="video-breakpoints-item " data-seconds="0048" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:00:48
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Consecințele I Razboi mondial
-                                    </div>
+                <div class="video-breakpoints-wrapper-all"></div>
+                <template id="video-breakpoints-wrapperTemplate">
+                    <div class="video-breakpoints-wrapper">
+                        {{#breakpoints}}
+                        <div class="video-breakpoints-item " data-seconds={{seconds}} title={{name}}>
+                            <div class="video-breakpoint-time-wrapper">
+                                <span class="video-breakpoint-time">
+                                    {{time}}
+                                </span>
+                            </div>
+                            <div class="video-breakpoint-name-wrapper">
+                                <div class="video-breakpoint-name">
+                                    {{name}}
                                 </div>
                             </div>
-                            <div class="video-breakpoints-item " data-seconds="0149" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:02:29
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Tratatul de pace de la Paris
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="652" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:10:52
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name" title="Модификаторах доступа «private», «default», «protected», «public»">Модификаторах доступа «private», «def...</div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="1091" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:18:11
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Объявление класса. Содержание класса
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="1355" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:22:35
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Члены класса. Поля и методы
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="1469" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:24:29
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Члены класса. Конструкторы
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="1681" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:28:01
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name" title="Объект. Создание Объекта. Ключевое слово «new». Устройство памяти JVM.">Объект. Создание Объекта. Ключевое сл...</div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="2006" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:33:26
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Создание пакета. Объявление класса
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="3133" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        0:52:13
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Геттеры и Сеттеры.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="4156" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        1:09:16
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Ключевое слово "null"
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-breakpoints-item " data-seconds="4420" title="">
-                                <div class="video-breakpoint-time-wrapper">
-                                    <span class="video-breakpoint-time">
-                                        1:13:40
-                                    </span>
-                                </div>
-                                <div class="video-breakpoint-name-wrapper">
-                                    <div class="video-breakpoint-name">
-                                        Практика: импорт пакетов
-                                    </div>
-                                </div>
-                            </div>
-    
-                    <div class="mobile-show-more">ПОКАЗАТЬ ВСЕ</div>
-                </div>
+                        </div>
+                        {{/breakpoints}}
+                    </div>
+                </template>
             </div>
+
             <div class="video-lesson-comments">
                 <div class="content-header_orange-border">
                     <div class="header-2"><span class="color-orange">комментарии и обсуждения</span></div>

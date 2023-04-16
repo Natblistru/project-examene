@@ -194,6 +194,10 @@ a.social-link {
     display: none;
   }
 
+  .hideImportant {
+    display: none !important;
+  }
+
   .active {
     background-color: #ccc;
   }
