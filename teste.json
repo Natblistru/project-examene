@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "lesson": "1",
+        "quizContent" : [
+            {
+                "question": "Care este capitala Franței?",
+                "answers": ["Londra", "Paris", "Madrid", "Berlin"],
+                "correctAnswer": "Paris"
+           }, 
+           {
+            "question": "Cine a scris romanul 'Mândrie și Prejudecată'?",
+            "answers": ["Charlotte Bronte", "Emily Bronte", "Jane Austen", "Virginia Woolf"],
+            "correctAnswer": "Jane Austen"
+           },
+            {
+                "question": "Cine a inventat becul electric?",
+                "answers": ["Thomas Edison", "Albert Einstein", "Nikola Tesla", "Benjamin Franklin"],
+                "correctAnswer": "Thomas Edison"
+           },
+           {
+            "question": "Care este cel mai înalt munte din lume?",
+            "answers": ["Kilimanjaro", "Mont Blanc", "Everest", "Aconcagua"],
+            "correctAnswer": "Everest"
+           },
+           {
+            "question": "Câte planete există în sistemul solar?",
+            "answers": ["7", "8", "9", "10"],
+            "correctAnswer": "8"
+           }, 
+           {
+            "question": "Cine a scris 'Hamlet'?",
+            "answers": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
+            "correctAnswer": "William Shakespeare"
+           },
+            {
+                "question": "Care este cel mai lung râu din lume?",
+                "answers": ["Nilul", "Amazonul", "Yangtze", "Mississippi"],
+                "correctAnswer": "Nilul"
+           },
+           {
+            "question": "Care este cel mai mic continent?",
+            "answers": ["Africa", "Europa", "Asia", "Australia"],
+            "correctAnswer": "Australia"
+           },
+           {
+            "question": "Cine a pictat 'Noaptea stelată'?",
+            "answers": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+            "correctAnswer": "Vincent van Gogh"
+           },
+           {
+            "question": "Care este capitala Canadei?",
+            "answers": ["Toronto", "Montreal", "Vancouver", "Ottawa"],
+            "correctAnswer": "Ottawa"
+           } 
+        ]
+    }
+]

@@ -20,7 +20,7 @@ async function app(){
     const response = await fetch(`lectiiHystory.json`);
      if (!response.ok) { 
         throw new Error(`HTTP error! status: ${response.status}`); } 
-    const data = await response.json();
+        const data = await response.json();
         let template = document.querySelector("#video-listTemplate").innerHTML;
         let scrollToVideo = document.querySelector("#scrollToVideo .video-list");
 
@@ -69,7 +69,7 @@ async function app(){
                 videoIndex = this.dataset.num-1;
                 videoSourse[videoIndex].classList.remove("hide");
 
-                lessonBreakpoints[videoIndex].classList.remove("hideImportant");                            
+                lessonBreakpoints[videoIndex].classList.remove("hideImportant");                           
             }
           });
         }

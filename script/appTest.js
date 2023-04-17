@@ -12,59 +12,25 @@ let questionCount;
 let scoreCount = 0;
 let seconds = 11;
 let timer;
+let quizArray;
+let lectureNumber = parseInt(new URLSearchParams(window.location.search).get('lecture'));
+console.log(lectureNumber); 
 
-let quizArray = [
-   {
-    question: "Care este capitala Franței?",
-    answers: ["Londra", "Paris", "Madrid", "Berlin"],
-    correctAnswer: "Paris"
-  }, 
-  {
-    question: "Cine a scris romanul 'Mândrie și Prejudecată'?",
-    answers: ["Charlotte Bronte", "Emily Bronte", "Jane Austen", "Virginia Woolf"],
-    correctAnswer: "Jane Austen"
-  },
-   {
-    question: "Cine a inventat becul electric?",
-    answers: ["Thomas Edison", "Albert Einstein", "Nikola Tesla", "Benjamin Franklin"],
-    correctAnswer: "Thomas Edison"
-  },
-  {
-    question: "Care este cel mai înalt munte din lume?",
-    answers: ["Kilimanjaro", "Mont Blanc", "Everest", "Aconcagua"],
-    correctAnswer: "Everest"
-  },
-  {
-    question: "Câte planete există în sistemul solar?",
-    answers: ["7", "8", "9", "10"],
-    correctAnswer: "8"
-  }, 
-  {
-    question: "Cine a scris 'Hamlet'?",
-    answers: ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
-    correctAnswer: "William Shakespeare"
-  },
-   {
-    question: "Care este cel mai lung râu din lume?",
-    answers: ["Nilul", "Amazonul", "Yangtze", "Mississippi"],
-    correctAnswer: "Nilul"
-  },
-  {
-    question: "Care este cel mai mic continent?",
-    answers: ["Africa", "Europa", "Asia", "Australia"],
-    correctAnswer: "Australia"
-  },
-  {
-    question: "Cine a pictat 'Noaptea stelată'?",
-    answers: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-    correctAnswer: "Vincent van Gogh"
-  },
-  {
-    question: "Care este capitala Canadei?",
-    answers: ["Toronto", "Montreal", "Vancouver", "Ottawa"],
-    correctAnswer: "Ottawa"
-  } 
-];
+async function getArray() {
+  try { 
+    const response = await fetch(`teste.json`);
+     if (!response.ok) { 
+        throw new Error(`HTTP error! status: ${response.status}`); } 
+        const data = await response.json();
+        console.log(data);
+        const filteredData = data.filter(obj => obj.lesson == lectureNumber);
+        quizArray = filteredData[0].quizContent;
+      }
+      catch (error) { 
+        console.error('Error:', error); 
+    }
+}
+getArray();
 startBtn.addEventListener("click", () => {
     gameDiv.classList.remove("hide");
     startDiv.classList.add("hide");    
@@ -122,22 +88,22 @@ function quizDisplay (questionCount) {
 };
 
 function quizCreator() {
-  quizArray.sort(() => Math.random() - 0.5);
-  for (let i of quizArray) {
-    i.answers.sort(() => Math.random() - 0.5);
-    countOfQuestion.innerHTML = 1 + " din " + quizArray.length + " întrebări";
-
-    quizContainer.innerHTML += `
-    <div class="container-mid hide">
-        <p class="question">${i.question}</p>
-        <button class="answer">${i.answers[0]}</button>
-        <button class="answer">${i.answers[1]}</button>
-        <button class="answer">${i.answers[2]}</button>
-        <button class="answer">${i.answers[3]}</button>
-    </div>
-    `;
-  }
-  gameDiv.addEventListener("click", checker) 
+    quizArray.sort(() => Math.random() - 0.5);
+    for (let i of quizArray) {
+      i.answers.sort(() => Math.random() - 0.5);
+      countOfQuestion.innerHTML = 1 + " din " + quizArray.length + " întrebări";
+  
+      quizContainer.innerHTML += `
+      <div class="container-mid hide">
+          <p class="question">${i.question}</p>
+          <button class="answer">${i.answers[0]}</button>
+          <button class="answer">${i.answers[1]}</button>
+          <button class="answer">${i.answers[2]}</button>
+          <button class="answer">${i.answers[3]}</button>
+      </div>
+      `;
+    }
+    gameDiv.addEventListener("click", checker) 
 }
 
 function checker(event) {
