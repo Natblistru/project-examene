@@ -25,7 +25,95 @@
                 <div class="filtru-btn2">Filtru2</div>
             </div>
             <div class="catalog-content">
+            <template id="catalog-contentTemplate">
                 <div class="catalog-cell">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <a href={{href}}>
+                                <img src={{src}} alt={{title}} title={{title}} class="catalog-cell__img b-lazy b-error" loading="lazy">
+                            </a>
+                    
+                            <div class="catalog-cell__content display-flex">
+                                <div>
+                                    <a href={{href}} class="font-weight-bold catalog-cell__link">
+                                        <h2>{{name}}</h2>
+                                    </a>
+                                    <p>
+                                        <span class="font-weight-bold">Actualizat:</span>
+                                                {{actualizatData}}
+                                    </p>
+                                </div>
+                    
+                                <div>
+                                    <div class="display-flex font-weight-500 catalog-cell_margin-top">
+                                        <p class="display-flex catalog-cell__col">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span class="catalog-cell_margin-left">{{durata}}</span>
+                                        </p>
+                                        <p class="display-flex catalog-cell__col catalog-cell_margin-left">
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <span class="catalog-cell_margin-left">{{numarLectii}}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="flip-card-back display-flex">
+                            <div class="catalog-cell__details">
+                                <div>
+                                    <header class="display-flex catalog-cell__header">
+                                        <a href={{href}} title={{title}} class="font-weight-bold catalog-cell__title catalog-cell__link ta-left">{{titleShort}}</a>
+                                        <span class="catalog-cell__icon catalog-cell__bookmark itvdnicon-unchecked-bookmark" data-first-lesson-id="3bc5b4f3-f01b-4a67-93ab-2fba96370d2c"></span>
+                                    </header>
+            
+                                    <div class="display-flex font-weight-500 catalog-cell_margin-top">
+                                        <p class="display-flex catalog-cell__col">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span class="catalog-cell_margin-left">{{durata}}</span>
+                                        </p>
+                                        <p class="display-flex catalog-cell__col catalog-cell_margin-left">
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <span class="catalog-cell_margin-left">{{numarLectii}}</span>
+                                        </p>
+                                    </div>
+            
+                                    <ul class="catalog-cell__list display-flex">
+                                        <li class="catalog-cell_margin-top">
+                                            <span class="font-weight-bold">Autor:&nbsp;</span>
+                                            <a href="/ru/catalog/author/aleksandr-shevchuk" class="catalog-cell__link">{{autor}}</a>
+                                        </li>
+                                        <li class="catalog-cell_margin-top">
+                                            <span class="font-weight-bold">Creat cursul:&nbsp;</span>
+                                            <span>{{creatData}}</span>
+                                        </li>
+                                        <li class="catalog-cell_margin-top">
+                                            <span class="font-weight-bold">Actualizat:&nbsp;</span>
+                                            <span>{{actualizatData}}</span>
+                                        </li>
+                                        <li class="catalog-cell_margin-top">
+                                            <span class="font-weight-bold">{{limba}}:&nbsp;</span>
+                                            <span>Română</span>
+                                        </li>
+                                    </ul>
+        
+            
+                                    <ul class="catalog-cell__icons-list display-flex">
+                                        <i class="fa-regular fa-folder-open" title="Descărcarea materialelor"></i>
+                                        <i class="fa-regular fa-pen-to-square" title="Teme pentru acasa cu rezolvări"></i>
+                                        <i class="fa-solid fa-spell-check" title="Testări"></i>
+                                    </ul>
+                                </div>
+            
+                                <div>
+                                    <a href={{href}} class="btn-filled-orange">Vizionare</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </template>
+                <!-- <div class="catalog-cell">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <a href="romana.html">
@@ -34,7 +122,7 @@
                     
                             <div class="catalog-cell__content display-flex">
                                 <div>
-                                    <a href="href="romana.html" class="font-weight-bold catalog-cell__link">
+                                    <a href="romana.html" class="font-weight-bold catalog-cell__link">
                                         <h2>Limba Română clasa 5-9</h2>
                                     </a>
                                     <p>
@@ -282,8 +370,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>-->
+            </div> 
             <div class="show-more-courses-btn">Mai multe cursuri</div>
             <div class="catalog-paginator">1 2 3</div>
         </div>
@@ -316,6 +404,7 @@
 
         </div>
     </footer>
+    <script src="script/mustache.min.js"></script>
     <script src="script/app.js"></script>
 </body>
 </html>

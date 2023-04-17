@@ -1,0 +1,44 @@
+[
+    {
+        "id" : "1",
+        "title": "Curs Limba Română",
+        "titleShort": "Limba Română",
+        "src" : "img/limbaRom.jpg",
+        "href" : "romana.html",
+        "name": "Limba Română clasa 5-9",
+        "creatData": "16.04.2023",        
+        "actualizatData": "16.04.2023",
+        "durata": "28 ore 49 min",
+        "numarLectii": "43 lecții",
+        "autor": "Natalia Bernavschi",
+        "limba": "Română"
+    },
+    {
+        "id" : "2",
+        "title": "Curs Matematica",
+        "titleShort": "Matematica",
+        "src" : "img/matematica.jpg",
+        "href" : "matem.html",
+        "name": "Matematica clasa 5-9",
+        "creatData": "16.04.2023",        
+        "actualizatData": "16.04.2023",
+        "durata": "28 ore 49 min",
+        "numarLectii": "43 lecții",
+        "autor": "Natalia Bernavschi",
+        "limba": "Română"
+    },
+    {
+        "id" : "3",
+        "title": "Curs Istoria",
+        "titleShort": "Istoria",
+        "src" : "img/istoria.jpg",
+        "href" : "hystory.html",
+        "name": "Istoria clasa 5-9",
+        "creatData": "16.04.2023",        
+        "actualizatData": "16.04.2023",
+        "durata": "28 ore 49 min",
+        "numarLectii": "43 lecții",
+        "autor": "Natalia Bernavschi",
+        "limba": "Română"
+    }
+]
