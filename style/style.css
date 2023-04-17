@@ -1,29 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+  font-family: 'Assistant', sans-serif;
 }
 .top-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.main-catalog {
+  width: 1190px;
+  margin: 0 auto;
+ }
+ 
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform .8s;
+  transform-style: preserve-3d;
+ }
+ .catalog-content .catalog-cell:hover .flip-card-inner {
+  transition-delay: .3s;
+  transform: rotateY(180deg);
+}
+.display-flex {
+  display: flex;
+}
+ .flip-card-front {
+  box-shadow: 0 5px 15px rgba(51,51,51,.2);
+ }
+ .catalog-content .flip-card-back {
+  background-color: #ededed;
+  color: #555;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d9d9d9;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  outline: 1px #ededed solid;
+ }
+
+ .catalog-content .flip-card-front, .catalog-content .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+ .flip-card-front > a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+ }
+ 
+ .catalog-cell__img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+ }
+ .catalog-cell__content {
+  height: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #555;
+ }
+.catalog-content .flip-card-front a {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+} 
+
+.catalog-cell_margin-top {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-evenly;
+}
+.catalog-cell__col {
+  display: flex;
+  color: #555;
+  font-weight: 500;
+  align-items: center;
+  gap: 5px;
+}
+.catalog-content .catalog-cell__list {
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.catalog-content .flip-card-back .catalog-cell__details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.catalog-content .catalog-cell__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.catalog-content .catalog-cell__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul li {
+  list-style-type: none;
+}
+.catalog-content .catalog-cell__link {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
 .catalog-filtre {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.main-catalog-content {
+.catalog-content .catalog-cell__spec-list {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.catalog-content .catalog-cell__label-wrapper.display-flex {
+  flex-wrap: wrap;
+}
+.catalog-content .catalog-cell__label {
+  cursor: pointer;
+  padding: 2px 6px;
+  text-decoration: none;
+  text-align: left;
+  align-items: center;
+}
+.ta-left {
+  text-align: left;
+}
+.catalog-cell__icons-list {
+  color: #4ea5a5;
+  gap: 20px;
+  font-size: 30px;
+}
+.catalog-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .catalog-cell {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+    perspective: 1000px;
+    transition: 0s transform;
+    width: calc(25% - 20px);
+    margin: 10px;
+    height: 30vw;
+}
+.btn-filled-orange {
+  color: #fff;
+  background: #e25d2c;
+  border: 2px solid #e25d2c;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  height: 48px;
+  line-height: 44px;
+  border-radius: 24px;
+  padding: 2px 30px;
 }
 .catalog-paginator {
     display: flex;
