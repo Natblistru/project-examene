@@ -1,28 +1,6 @@
 [
 	{
 		"id": "1",
-		"title": "Conferinţa de Pace de la Paris",
-		"video": "https://www.youtube.com/embed/yV9BAp0JzNA",
-		"adressTeorie": "../pdfLectie/pdfLectie.zip",
-		"adressTA": "../pdfTA/pdfTA.zip",
-		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.",
-		"breakpoints": [
-			{"time":"0:00:48","seconds":"48","name":"Consecințele I Razboi mondial"},
-			{"time":"0:02:29","seconds":"149","name":"Tratatul de pace de la Paris"},
-			{"time":"0:04:08","seconds":"248","name":"Semnarea tratatelor de pace"},
-			{"time":"0:05:33","seconds":"333","name":"Pedepsirea Germnaniei"},
-			{"time":"0:06:54","seconds":"414","name":"Cele 14 puncte ale lui W.Wilson"},
-			{"time":"0:08:24","seconds":"504","name":"Liga Națiunilor - harta"},
-			{"time":"0:09:02","seconds":"542","name":"Caricatură Ligii Națiunilor"},
-			{"time":"0:10:09","seconds":"609","name":"Sistemul Versailles-Washington 1922"},
-			{"time":"0:12:04","seconds":"724","name":"Pactul Briand-Kellog 1928"},
-			{"time":"0:13:26","seconds":"806","name":"Cârdășia de la Munchen 1938"},
-			{"time":"0:15:18","seconds":"918","name":"Pactul Molotov-Ribbentrop 1939"},
-			{"time":"0:16:41","seconds":"1001","name":"Concluzii"}
-		]
-	},
-	{
-		"id": "2",
 		"title": "România în Primul Război Mondial",
 		"video": "https://www.youtube.com/embed/qV2PSgIK-c4",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
@@ -43,7 +21,7 @@
 		]
 	},
 	{
-		"id": "3",
+		"id": "2",
 		"title": "Mișcarea națională a românilor din Basarabia (1917-1918)",
 		"video": "https://www.youtube.com/embed/q8Gqn4UY6pI",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
@@ -69,7 +47,7 @@
 		]
 	},
 	{
-		"id": "4",
+		"id": "3",
 		"title": "Formarea Statului Național Unitar Român. Marea Unire din 1918",
 		"video": "https://www.youtube.com/embed/OtBKszdRODQ",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
@@ -85,6 +63,28 @@
 			{"time":"0:05:37","seconds":"337","name":"Unirea Transilvaniei cu România"},
 			{"time":"0:07:01","seconds":"421","name":"Importanța Actului Unirii din 1918"},
 			{"time":"0:08:26","seconds":"506","name":"Recunoașterea Unirii Basarabiei cu România"}
+		]
+	},
+	{
+		"id": "4",
+		"title": "Conferinţa de Pace de la Paris",
+		"video": "https://www.youtube.com/embed/yV9BAp0JzNA",
+		"adressTeorie": "../pdfLectie/pdfLectie.zip",
+		"adressTA": "../pdfTA/pdfTA.zip",
+		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.",
+		"breakpoints": [
+			{"time":"0:00:48","seconds":"48","name":"Consecințele I Razboi mondial"},
+			{"time":"0:02:29","seconds":"149","name":"Tratatul de pace de la Paris"},
+			{"time":"0:04:08","seconds":"248","name":"Semnarea tratatelor de pace"},
+			{"time":"0:05:33","seconds":"333","name":"Pedepsirea Germnaniei"},
+			{"time":"0:06:54","seconds":"414","name":"Cele 14 puncte ale lui W.Wilson"},
+			{"time":"0:08:24","seconds":"504","name":"Liga Națiunilor - harta"},
+			{"time":"0:09:02","seconds":"542","name":"Caricatură Ligii Națiunilor"},
+			{"time":"0:10:09","seconds":"609","name":"Sistemul Versailles-Washington 1922"},
+			{"time":"0:12:04","seconds":"724","name":"Pactul Briand-Kellog 1928"},
+			{"time":"0:13:26","seconds":"806","name":"Cârdășia de la Munchen 1938"},
+			{"time":"0:15:18","seconds":"918","name":"Pactul Molotov-Ribbentrop 1939"},
+			{"time":"0:16:41","seconds":"1001","name":"Concluzii"}
 		]
 	}
 ]
