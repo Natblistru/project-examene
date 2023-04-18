@@ -3,7 +3,7 @@
 		"id": "1",
 		"title": "România în Primul Război Mondial",
 		"video": "https://www.youtube.com/embed/qV2PSgIK-c4",
-		"adressTeorie": "../pdfLectie/pdfLectie.zip",
+		"adressTeorie": "./pdfLectie/pdfLectie1.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
 		"continut": "În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată.",
 		"breakpoints": [
