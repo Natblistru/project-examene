@@ -3,6 +3,7 @@ let quizContainer = document.getElementById("container");
 let nextBtn = document.getElementById("next-button");
 let countOfQuestion = document.querySelector(".number-of-question");
 let gameDiv = document.querySelector(".game");
+let titluHTML = document.querySelector(".game h2");
 let endDiv = document.querySelector(".end");
 let restartBtn = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
@@ -13,6 +14,7 @@ let scoreCount = 0;
 let seconds = 11;
 let timer;
 let quizArray;
+let curentQuiz;
 let lectureNumber = parseInt(new URLSearchParams(window.location.search).get('lecture'));
 console.log(lectureNumber); 
 
@@ -23,8 +25,10 @@ async function getArray() {
         throw new Error(`HTTP error! status: ${response.status}`); } 
         const data = await response.json();
         console.log(data);
-        const filteredData = data.filter(obj => obj.lesson == lectureNumber);
+        const fileName = window.location.pathname.split('/').pop();
+        const filteredData = data.filter(obj => obj.lesson == lectureNumber&&obj.fileCommon == fileName);
         quizArray = filteredData[0].quizContent;
+        curentQuiz = filteredData[0];
       }
       catch (error) { 
         console.error('Error:', error); 
@@ -67,6 +71,7 @@ function displayNext() {
 }
 
 function quizDisplay (questionCount) {
+  titluHTML.innerHTML = curentQuiz.lessonTitle;
   countOfQuestion.innerHTML = questionCount + 1 + " din " + quizArray.length + " întrebări";
 
   let quizCards = document.querySelectorAll(".container-mid");
@@ -91,6 +96,7 @@ function quizCreator() {
     quizArray.sort(() => Math.random() - 0.5);
     for (let i of quizArray) {
       i.answers.sort(() => Math.random() - 0.5);
+      titluHTML.innerHTML = curentQuiz.lessonTitle;
       countOfQuestion.innerHTML = 1 + " din " + quizArray.length + " întrebări";
   
       quizContainer.innerHTML += `

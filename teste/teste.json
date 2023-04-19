@@ -3,116 +3,85 @@
         "id": "1",
         "name": "Quiz",
         "file": "indexTest.html?lecture=1",
+        "fileCommon": "indexTest.html",
         "lesson": "1",
+        "lessonTitle": "România în timpul Primul Război Mondial",
         "quizContent" : [
             {
-                "question": "Care este capitala Franței?",
-                "answers": ["Londra", "Paris", "Madrid", "Berlin"],
-                "correctAnswer": "Paris"
+                "question": "Ce imperii includeau teritorii românești și luptau în tabere diferite în timpul Primului Război Mondial?",
+                "answers": ["Rusia și Germania", "Germania și Austro-Ungaria", "Rusia și Austro-Ungaria", "Franța și Anglia"],
+                "correctAnswer": "Rusia și Austro-Ungaria"
            }, 
            {
-            "question": "Cine a scris romanul 'Mândrie și Prejudecată'?",
-            "answers": ["Charlotte Bronte", "Emily Bronte", "Jane Austen", "Virginia Woolf"],
-            "correctAnswer": "Jane Austen"
+            "question": "Când a avut loc ședința Consiliului de Coroană în care majoritatea s-a pronunțat pentru respectarea neutralității?",
+            "answers": ["4/17 august 1916", "21 iulie/3 august 1914", "14/27 august 1916", "22 iulie 1917"],
+            "correctAnswer": "21 iulie/3 august 1914"
            },
             {
-                "question": "Cine a inventat becul electric?",
-                "answers": ["Thomas Edison", "Albert Einstein", "Nikola Tesla", "Benjamin Franklin"],
-                "correctAnswer": "Thomas Edison"
+                "question": "Care dintre următoarele tabere beligerante cel mai insistent exercita presiune asupra guvernului României pentru a intra în război?",
+                "answers": ["Franța și Rusia", "Germania și Austria-Ungaria", "Anglia și SUA", "Spania și Portugalia"],
+                "correctAnswer": "Franța și Rusia"
            },
            {
-            "question": "Care este cel mai înalt munte din lume?",
-            "answers": ["Kilimanjaro", "Mont Blanc", "Everest", "Aconcagua"],
-            "correctAnswer": "Everest"
+            "question": "Ce s-a întâmplat la 4/17 august 1916?",
+            "answers": ["România a declarat război Austro-Ungariei", "Ion I. C. Brătianu a semnat cu reprezentanții diplomatici ai Antantei Tratatul de alianță și Convenția militară", "Germania a declarat război României", "Rusia a semnat Tratatul de pace de la Brest-Litovsk"],
+            "correctAnswer": "Ion I. C. Brătianu a semnat cu reprezentanții diplomatici ai Antantei Tratatul de alianță și Convenția militară"
            },
            {
-            "question": "Câte planete există în sistemul solar?",
-            "answers": ["7", "8", "9", "10"],
-            "correctAnswer": "8"
+            "question": "Când a declarat România război Austro-Ungariei?",
+            "answers": ["14/27 august 1916", "4/17 august 1916", "21 iulie/3 august 1914", "22 iulie 1917"],
+            "correctAnswer": "14/27 august 1916"
            }, 
            {
-            "question": "Cine a scris 'Hamlet'?",
-            "answers": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
-            "correctAnswer": "William Shakespeare"
+            "question": "Ce a declarat Germania cu o zi după ce România a declarat război Austro-Ungariei?",
+            "answers": ["Război Franței", "Război Angliei", "Război Rusiei", "Război României"],
+            "correctAnswer": "Război României"
            },
             {
-                "question": "Care este cel mai lung râu din lume?",
-                "answers": ["Nilul", "Amazonul", "Yangtze", "Mississippi"],
-                "correctAnswer": "Nilul"
-           },
-           {
-            "question": "Care este cel mai mic continent?",
-            "answers": ["Africa", "Europa", "Asia", "Australia"],
-            "correctAnswer": "Australia"
-           },
-           {
-            "question": "Cine a pictat 'Noaptea stelată'?",
-            "answers": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-            "correctAnswer": "Vincent van Gogh"
-           },
-           {
-            "question": "Care este capitala Canadei?",
-            "answers": ["Toronto", "Montreal", "Vancouver", "Ottawa"],
-            "correctAnswer": "Ottawa"
-           } 
+                "question": "Care dintre următoarele țări nu a declarat război României în zilele următoare declarării războiului de către aceasta împotriva Austro-Ungariei?",
+                "answers": ["Turcia", "Bulgaria", "Rusia", "Germania"],
+                "correctAnswer": "Rusia"
+           }
+
         ]
     },
     {
         "id": "2",
         "name": "Intrebare - răspuns",
         "file": "indexTestAuto.html?lecture=1",
+        "fileCommon": "indexTestAuto.html",
         "lesson": "1",
+        "lessonTitle": "România în timpul Primul Război Mondial",
         "quizContent" : [
             {
-                "question": "Care este capitala Franței?",
-                "answers": ["Londra", "Paris", "Madrid", "Berlin"],
-                "correctAnswer": "Paris"
+                "question": "Defineşte termenul de 'Neutralitate'",
+                "correctAnswer": "Politica unui stat de a nu se implica direct într-un conflict militar, păstrându-și suveranitatea și independența"
            }, 
            {
-            "question": "Cine a scris romanul 'Mândrie și Prejudecată'?",
-            "answers": ["Charlotte Bronte", "Emily Bronte", "Jane Austen", "Virginia Woolf"],
-            "correctAnswer": "Jane Austen"
+                "question": "Defineşte noțiunea 'Consiliu de Coroană'",
+                "correctAnswer": "Organ consultativ format din înalți demnitari ai statului, care aveau rolul de a consilia regele în luarea deciziilor majore legate de politica externă a României"
            },
             {
-                "question": "Cine a inventat becul electric?",
-                "answers": ["Thomas Edison", "Albert Einstein", "Nikola Tesla", "Benjamin Franklin"],
-                "correctAnswer": "Thomas Edison"
+                "question": "Defineşte noțiunea 'Părți beligerante'",
+                "correctAnswer": "Două sau mai multe state sau grupuri de state care sunt implicate într-o confruntare militară directă."
            },
            {
-            "question": "Care este cel mai înalt munte din lume?",
-            "answers": ["Kilimanjaro", "Mont Blanc", "Everest", "Aconcagua"],
-            "correctAnswer": "Everest"
+            "question": "Defineşte noțiunea 'Convenție militară'",
+            "correctAnswer": "Reguli și norme referitoare la comportamentul părților implicate în război. Aceste convenții sunt menite să protejeze civili, prizonierii de război și alte persoane neimplicate în conflict."
            },
            {
-            "question": "Câte planete există în sistemul solar?",
-            "answers": ["7", "8", "9", "10"],
-            "correctAnswer": "8"
+            "question": "Defineste ternul de `Armstițiu`",
+            "correctAnswer": "Acord de încetare a luptelor între două sau mai multe părți aflate într-un conflict militar. acord de încetare a ostilităților sau de încetare temporară a luptelor între două sau mai multe părți aflate într-un conflict militar. Armistițiul poate fi semnat pentru a permite părților să negocieze un tratat de pace."
            }, 
            {
-            "question": "Cine a scris 'Hamlet'?",
+            "question": "Defineste ternul de `Bolșevici`?",
             "answers": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
-            "correctAnswer": "William Shakespeare"
+            "correctAnswer": "Grup politic din Rusia care care a optat pentru înlocuirea guvernării țariste cu o republică socialistă, care să se bazeze pe puterea muncitorilor și a țăranilor. În 1917, ei au organizat o revoluție armată, prin care au preluat puterea în Rusia și au fondat Uniunea Sovietică."
            },
             {
-                "question": "Care este cel mai lung râu din lume?",
-                "answers": ["Nilul", "Amazonul", "Yangtze", "Mississippi"],
-                "correctAnswer": "Nilul"
-           },
-           {
-            "question": "Care este cel mai mic continent?",
-            "answers": ["Africa", "Europa", "Asia", "Australia"],
-            "correctAnswer": "Australia"
-           },
-           {
-            "question": "Cine a pictat 'Noaptea stelată'?",
-            "answers": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-            "correctAnswer": "Vincent van Gogh"
-           },
-           {
-            "question": "Care este capitala Canadei?",
-            "answers": ["Toronto", "Montreal", "Vancouver", "Ottawa"],
-            "correctAnswer": "Ottawa"
-           } 
+                "question": "De ce era dificilă adoptarea unei decizii privind implicarea României în I Război Mondial?",
+                "correctAnswer": "Cele douã imperii - Rus și Austro-Ungar, care includeau teritorii românești, luptau în tabere diferite. Dacă se angaja în rãzboi de partea unui bloc, România risca să își sacrifice teritoriile sale românești - sau Basarabia, sau Transilvania cu Bucovina."
+           }
         ]
     }
 ]
