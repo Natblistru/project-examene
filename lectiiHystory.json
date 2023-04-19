@@ -2,9 +2,12 @@
 	{
 		"id": "1",
 		"title": "România în Primul Război Mondial",
+		"disciplina": "Istoria",
+		"ciclul": "Ciclul gimnazial",
 		"video": "https://www.youtube.com/embed/qV2PSgIK-c4",
 		"adressTeorie": "./pdfLectie/pdfLectie1.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
+		"adresaListaTeste": "../teste/listaTeste.html?lecture=1",
 		"continut": "În Primul Război Mondial, România s-a alăturat Antantei în anul 1916, luptând împotriva Puterilor Centrale alături de Rusia, Franța, Marea Britanie și Italia. România a pierdut teritorii importante în urma războiului, dar a reușit să își câștige independența și să devină o țară unificată.",
 		"breakpoints": [
 			{"time":"0:17:40","seconds":"1060","name":"Repere"},
@@ -23,9 +26,12 @@
 	{
 		"id": "2",
 		"title": "Mișcarea națională a românilor din Basarabia (1917-1918)",
+		"disciplina": "Istoria",
+		"ciclul": "Ciclul gimnazial",
 		"video": "https://www.youtube.com/embed/q8Gqn4UY6pI",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
+		"adresaListaTeste": "../teste/listaTeste.html?lecture=2",
 		"continut": "Mișcarea națională a românilor din Basarabia a avut loc între anii 1917-1918 și a avut ca scop unirea teritoriului cu România. Această mișcare a dus la declanșarea unor conflicte în regiune, dar a fost una dintre cauzele care au dus la unirea Basarabiei cu România în anul 1918.",
 		"breakpoints": [
 			{"time":"0:05:58","seconds":"358","name":"Repere"},
@@ -49,9 +55,12 @@
 	{
 		"id": "3",
 		"title": "Formarea Statului Național Unitar Român. Marea Unire din 1918",
+		"disciplina": "Istoria",
+		"ciclul": "Ciclul gimnazial",
 		"video": "https://www.youtube.com/embed/OtBKszdRODQ",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
+		"adresaListaTeste": "../teste/listaTeste.html?lecture=3",
 		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.",
 		"breakpoints": [
 			{"time":"0:01:05","seconds":"65","name":"Evocare"},
@@ -68,9 +77,12 @@
 	{
 		"id": "4",
 		"title": "Conferinţa de Pace de la Paris",
+		"disciplina": "Istoria",
+		"ciclul": "Ciclul gimnazial",
 		"video": "https://www.youtube.com/embed/yV9BAp0JzNA",
 		"adressTeorie": "../pdfLectie/pdfLectie.zip",
 		"adressTA": "../pdfTA/pdfTA.zip",
+		"adresaListaTeste": "../teste/listaTeste.html?lecture=4",
 		"continut": "Statele învingătoare în Primul Război Mondial au hotărât la Conferința de la Paris (1919-1920) să stabilească hotarele în Europa, impunând o nouă ordine internațională prin semnarea unor tratate de pace cu țările învinse. La Conferință a participat o delegație din partea României, condusă de Ionel I.C. Brăitianu, și reprezentanții guberniei Basarabia, condusă de Pelivan.",
 		"breakpoints": [
 			{"time":"0:00:48","seconds":"48","name":"Consecințele I Razboi mondial"},

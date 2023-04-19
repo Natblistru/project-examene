@@ -10,38 +10,33 @@
 </head>
 <body>
     <div class="container">
-        <div class="breadcrumbs">
-                   <a href=""> Ciclul gimnazial </a>
-                   <span>&nbsp;»&nbsp;</span>
-                   <a href=""> Istoria </a>
-                   <span>&nbsp;»&nbsp;</span>
-                   <a href=""> România în Primul Război Mondial </a>
-         </div>
-         <div class="list">
+       <template id="containerTemplate">
+            <div class="breadcrumbs">
+                    <a href=""> {{ciclul}} </a>
+                    <span>&nbsp;»&nbsp;</span>
+                    <a href=""> {{disciplina}} </a>
+                    <span>&nbsp;»&nbsp;</span>
+                    <a href=""> {{title}} </a>
+            </div>
+            <div class="list"></div>
+
+        </template>
+        
+        <template id="listTemplate">
              <div class="item">
-                <a href="indexTestAuto.html">
+                <a href={{file}}>
                     <div class="text-wrap">
                        <div class="left">
-                           <div> Intrebare - răspuns </div>
-                           <div class="grey"> 15 itemi </div>
+                           <div> {{name}}</div>
+                           <div class="grey"> {{quizContent.length}} itemi</div>
                        </div>
                        <div class="item-detail-icon">&rsaquo;</div>
                     </div>
                 </a>
              </div>
-             <div class="item">
-                <a href="indexTest.html?lecture=1">
-                    <div class="text-wrap">
-                       <div class="left">
-                           <div> Quiz </div>
-                           <div class="grey"> 15 itemi </div>
-                       </div>
-                       <div class="item-detail-icon">&rsaquo;</div>
-                    </div>
-                </a>
-             </div>
-         </div>
-     </div>
-     <script src="../script/appListTest.js"></script>
+        </template>
+    </div>
+    <script src="../script/mustache.min.js"></script>
+    <script src="../script/appListTest.js"></script>
 </body>
 </html>
